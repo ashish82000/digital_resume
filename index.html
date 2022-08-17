@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ashish Jain</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png" />
+    <script>
+      var r = document.querySelector(":root");
+
+      function change() {
+        // no ';' here
+        var elem = document.getElementById("theme--mode");
+        if (elem.value == "☀️") {
+          elem.value = "🌙";
+          elem.innerHTML = "🌙";
+          r.style.setProperty("--mainTextColor", "#000");
+          r.style.setProperty("--mainTextColor", "rgb(51 51 51)");
+          r.style.setProperty("--mainLinkColor", "#0da2b8");
+          r.style.setProperty("--mainBorderColor", "rgb(218, 218, 218)");
+          r.style.setProperty("--mainBgColor", "rgb(249, 250,251)");
+        } else {
+          elem.value = "☀️";
+          elem.innerHTML = "☀️";
+          r.style.setProperty("--mainTextColor", "#fff");
+          r.style.setProperty("--mainTextColor", "#adb0b1");
+          r.style.setProperty("--mainLinkColor", "rgb(30, 190,214)");
+          r.style.setProperty("--mainBorderColor", "#2b3031");
+          r.style.setProperty("--mainBgColor", "#131415");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="mode--setter">
+      <button id="theme--mode" type="button" onclick="change()" value="☀️">
+        ☀️
+      </button>
+    </div>
+    <div id="container--main">
+      <section id="wrapper--hero" class="section--page">
+        <img id="profile-pic" src="./assets/images/ashish.jpg" />
+        <div>
+          <h1 id="username">Ashish Jain</h1>
+          <p id="bio">
+            Software development engineer at
+            <a href="http://www.decimalpointanalytics.com" target="_blank"
+              >Decimal Point Analytics Pvt Ltd</a
+            >.
+          </p>
+          <p id="email">👉 ashish82000@gmail.com</p>
+          <!-- <p id="phone">👉 (+91) 900-494-7573</p> -->
+        </div>
+      </section>
+
+      <section class="section--page">
+        <div id="social--list">
+          <!-- <a href="#" target="_blank">YouTube</a> -->
+          <a href="http://www.linkedin.com/in/ashishjain28" target="_blank"
+            >LinkedIn</a
+          >
+          <a href="#" target="_blank">GitHub</a>
+          <a href="#" target="_blank">Twitter</a>
+          <a href="./assets/resume.pdf" target="_blank">Download Resume</a>
+        </div>
+      </section>
+
+      <section class="section--page">
+        <h2 id="skills-section">Skills & Qualifications</h2>
+        <ul id="qualifications--list">
+          <li>✔️ Hands-on experience with front & backend development.</li>
+          <li>✔️ Extensive knowledge in API & Database.</li>
+          <li>✔️ Creative thinker and problem solver.</li>
+          <li>
+            ✔️ Love to explore and work with new technologies and frameworks.
+          </li>
+        </ul>
+      </section>
+
+      <section class="section--page">
+        <h2>Tech Stack</h2>
+        <div id="wrapper--techstack__items">
+          <div class="card--techstack">
+            <span>Python, JavaScript</span>
+          </div>
+          <div class="card--techstack">
+            <span>Flask, FastAPI, BeautifulSoup, Selenium</span>
+          </div>
+          <div class="card--techstack">
+            <span>ReactJS,FireBase, NextJS, ContextAPI</span>
+          </div>
+          <div class="card--techstack">
+            <span>MySQL, MSSQL</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section--page" id="work-history-wrapper">
+        <h2>Work History</h2>
+        <div class="line-break"></div>
+        <div class="card--work-history">
+          <strong
+            >🚧 SOFTWARE DEVELOPMENT ENGINEER | DECIMAL POINT ANALYTICS PVT
+            LTD</strong
+          >
+          <p>Mar 2022 - Present</p>
+          <p>
+            Worked on various interesting projects which included data scraping
+            from multiple sources such as websites and PDFs and comparing the
+            current & historical data to showcase the occured changes; and also
+            presenting the scraped data to the Front-end for the end users to
+            access.
+          </p>
+          <ul>
+            <li>
+              Doubled the number of websites we scraped from 100 to 200 within
+              my first 4 months.
+            </li>
+            <li>
+              Optimized the scraper and comparator to reduce the processing time
+              by half and increase the quality of the output.
+            </li>
+            <li>
+              Helped produce a common scraper that can be used by multiple
+              projects inside the company.
+            </li>
+          </ul>
+        </div>
+        <div class="line-break"></div>
+      </section>
+
+      <section class="section--page">
+        <h2>Projects & Accomplishments</h2>
+
+        <div class="card--project">
+          <span>🏆 </span> <b>GameKart</b> &nbsp; — &nbsp;  React, FireBase, ContextAPI
+          <ul>
+            <li>
+              An E-Commerce website for buying gaming gears created using React library.
+            </li>
+            <li>
+              ContextAPI is used for state management, MaterialUI for styling and Firebase for backend and authentication.
+            </li>
+            <li>
+              Various features such as "Cart", "Track Shipping", etc are also implemented.
+            </li>
+          </ul>
+        </div>
+
+        <div class="card--project">
+          <span>🏆 </span> <b>AutoClicker</b> &nbsp; — &nbsp;    Python Selenium, BeautifulSoup, Requests
+            <ul>
+              <li>
+                A Python program to automatically click at the specified button/link/attribute on a webpage. 
+              </li>
+              <li>
+                The target URL is visited using Requests library, and then the raw html is extracted using BeautifulSoup.
+              </li>
+              <li>
+                The desired button/link/attribute is found using BeautifulSoup with the help of classes or ids and the click is immitated using Selenium.
+              </li>
+            </ul>
+        </div>
+
+        <div class="card--project">
+          <span>🏆 </span> <b>Mail Sender</b> &nbsp; — &nbsp;    Python, smtplib
+          <ul>
+            <li>
+              A basic email sender created using smtplib which sends emails from a gmail account.
+            </li>
+            <li>
+              Reciever's Email, Subject and Body are taken as input from the user and stored using MIME.
+            </li>
+            <li>
+              A session is created using the smtp's gmail server and port number, log in and the provided message is sent to the target email.
+            </li>
+          </ul>
+        </div>
+
+        <div class="card--project">
+          <span>🏆 </span><b>Cafeteria App UI</b> &nbsp; — &nbsp;    Dart, Flutter
+          <ul>
+            <li>
+              An E-Commerce website for buying gaming gears created using React library.
+            </li>
+            <li>
+              ContextAPI is used for state management, MaterialUI for styling and Firebase for backend and authentication.
+            </li>
+            <li>
+              Various features such as "Cart", "Track Shipping", etc are also implemented.
+            </li>
+          </ul>
+        </div>
+
+        <div class="card--project">
+          <span>🏆 </span><b>Pharmacy Website UI</b> &nbsp; — &nbsp;    HTML, CSS, JavaScript
+          <ul>
+            <li>
+              An E-Commerce website for buying gaming gears created using React library.
+            </li>
+            <li>
+              ContextAPI is used for state management, MaterialUI for styling and Firebase for backend and authentication.
+            </li>
+            <li>
+              Various features such as "Cart", "Track Shipping", etc are also implemented.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section--page" id="work-history-wrapper">
+        <h2>Education</h2>
+        <div class="line-break"></div>
+        <div class="card--work-history">
+          <strong
+            >🎓 BACHELOR'S OF SCIENCE (COMPUTER SCIENCE) | S. K. SOMAIYA DEGREE
+            COLLEGE OF ARTS, COMMERCE AND SCIENCE (AUROBINDO)</strong
+          >
+          <p>Jun 2018 - Mar 2021</p>
+        </div>
+        <div class="line-break"></div>
+        <div class="card--work-history">
+          <strong
+            >🎓 HIGHER SECONDARY SCHOOL CERTIFICATE | K. J. SOMAIYA JUNIOR
+            COLLEGE OF SCIENCE AND COMMERCE.</strong
+          >
+          <p>Jun 2016 - Mar 2018</p>
+        </div>
+        <div class="line-break"></div>
+        <div class="card--work-history">
+          <strong
+            >🎓 SECONDARY SCHOOL CERTIFICATE | St. LAWRENCE HIGH SCHOOL & JUNIOR
+            COLLEGE</strong
+          >
+          <p>Mar 2016</p>
+        </div>
+        <div class="line-break"></div>
+      </section>
+    </div>
+  </body>
+</html>
