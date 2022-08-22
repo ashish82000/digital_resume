@@ -92,7 +92,13 @@ li {
 }
 
 #email {
-    color: var(--mainTextColor);
+    font-size: 1em;
+    color: var(--mainLinkColor);
+    display: flex;
+}
+
+#email:hover {
+    color: var(--secondaryTextColor);
 }
 
 #phone {
@@ -193,7 +199,7 @@ button {
     }
 
     #email {
-        text-align: center;
+        justify-content: center;
     }
 
     #bio, a {
@@ -205,6 +211,10 @@ button {
         font-size: 1.2em;
         column-gap: 1.5em;
         row-gap: 1em;
+    }
+
+    #wrapper--techstack__items {
+        justify-content: center;
     }
 
     #skills-section {
